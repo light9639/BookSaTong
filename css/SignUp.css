@@ -1,0 +1,183 @@
+/* container  */
+#container {
+    margin: 50px 0 10px;
+}
+.loginBox {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 100px 50px;
+    border-radius: 15px;
+}
+#container>h1 {
+    text-align: center;
+    color: var(--textColor);
+}
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    border: 1px solid #ccc;
+    width: 490px;
+    padding: 15px 0 15px 10px;
+}
+.box1, .box4, .box5, .box6, .textBox {
+    border-radius: 5px;
+}
+.box1 {
+    margin-bottom: 15px;
+}
+.box2 {
+    border-radius: 5px 5px 0 0;
+}
+.box3 {
+    border-radius: 0 0 5px 5px;
+}
+.box4 {
+    margin: 15px 0;
+}
+.text1 {
+    font-size: 1.1em;
+    padding: 10px 0;
+}
+.box6 {
+    width: 60%;
+    padding: 10px 0 10px 10px;
+    margin-right: 20px;
+    float: left;
+}
+.year {
+    display: flex;
+}
+.button1, .button2 {
+    width: 13%;
+    padding: 12px 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.25em;
+    border: none;
+}
+.button1 {
+    margin-left: 8%;
+    margin-right: -5px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ccc;
+}
+.button2 {
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ccc;
+}
+.buttonActive {
+    background-color: var(--mainColor);
+}
+.button:hover {
+    opacity: .7;
+}
+.textBox {
+    margin: 5% 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1.25em;
+}
+.textBox1>div {
+    padding:12px 20px;
+}
+.textBox1_text2, .textBox1_text3, .textBox1_text4, .textBox1_text5 {
+    display: flex;
+    justify-content: space-between;
+}
+.textBox1 a:hover {
+    opacity: .7;
+}
+.textBox1 input {
+    margin-right: 5px;
+    margin-top: 1%;
+}
+.textBox1_text1 {
+    display: flex;
+    background-color: #EBF6FF;
+    border-bottom: 1px solid #ccc;
+}
+.textBox2_text2, .textBox2_text4, .textBox2_text5 {
+    font-size: 0.8em;
+}
+.textBox2_text2 img, .textBox2_text4 img, .textBox2_text5 img {
+    width: 6px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+input[type='reset'] {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.loginButton, .signUpButton {
+    text-align: center;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.signUpButton {
+    background-color: var(--mainColor);
+    padding: 10px 0;
+}
+.signUpButton>input {
+    background-color: var(--mainColor);
+    border: none;
+}
+.loginButton {
+    background-color: #fff;
+    margin-top: 5%;
+    padding: 12px 0;
+}
+.loginButton>a {
+    color: var(--textSub);
+}
+.loginButton>a {
+    font-size: 20px;
+    font-weight: 500;
+}
+.signUpButton:hover, .loginButton:hover {
+    opacity: .8;
+}
+footer {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .loginBox {
+        padding: 10%;
+    }
+    #container {
+        overflow: hidden;
+    }
+    .box1, .box2, .box3, .box4, .box5 {
+        width: calc(100% - 13px);
+    }
+    .button1, .button2 {
+        width: 20%;
+        padding: 18px 0;
+    }
+    .button1 {
+        margin-left: 5%;
+        margin-right: -5px;
+    }
+    .textBox1>div {
+        padding: 10px;
+    }
+    .textBox1_text2>div, .textBox1_text3>div, .textBox1_text4>div, .textBox1_text5>div {
+        font-size: 0.8em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .year {
+        display: flex;
+    }
+    .button1, .button2 {
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .signUpButton {
+        padding: 8px 0;
+    }
+}

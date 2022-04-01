@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="BookSaTong">
+    <meta property="og:image" content="http://donghosting.dothome.co.kr/img/mainBanner_01.jpg">
+    <meta property="og:description" content="BookSaTong웹사이트">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>북새통문고</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="shortcut icon" href="icon/BookSaTong.svg">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <ul class="skipMenu">
+        <li><a href="#nav">메인메뉴 바로가기</a></li>
+        <li><a href="#container">본문 바로가기</a></li>
+    </ul>
+    <div class="Mobile">
+        <div class="mobileBox">
+            <h2 class="mobileLogo">
+                <a href="index.html">북새통문고</a>
+                <span>|</span>
+                <a href="index.html">BOOK<span>Choice</span></a>
+            </h2>
+            <ul class="login">
+                <li><a href="SignUP-before.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+            <input type="search" autocomplete='on' placeholder="제목, 저자, 출판사 검색" >
+            <a href="#void"><img src="img/calpop_close2n.png" alt="X"></a>
+        </div>
+        <nav id="mobileNav">
+            <ul class="mobileMenu">
+                <li>
+                    <a href="#void">메뉴</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void"><img src="icon/download.svg" alt="download">다운로드</a></li>
+                        <li><a href="#void"><img src="icon/Cart.svg" alt="Cart">내 보관함</a></li>
+                        <li><a href="#void"><img src="icon/N_blue.svg" alt="N_blue">신간</a></li>
+                        <li><a href="#void"><img src="icon/Best_Seller.svg" alt="Best_Seller">베스트</a></li>
+                        <li><a href="https://www.naver.com/"><img src="icon/naver.svg" alt="naver">네이버</a></li>
+                        <li><a href="https://www.kakaocorp.com/page/"><img src="icon/kakao.svg" alt="kakao">카카오</a></li>
+                        <li><a href="https://www.google.co.kr/"><img src="icon/google.svg" alt="google">구글</a></li>
+                        <li><a href="https://www.youtube.com/"><img src="icon/youtube.svg" alt="youtube">유튜브</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">일반</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">소설</a></li>
+                        <li><a href="#void">경영/경제</a></li>
+                        <li><a href="#void">인문/사회/역사</a></li>
+                        <li><a href="#void">자기계발</a></li>
+                        <li><a href="#void">에세이/시</a></li>
+                        <li><a href="#void">여행</a></li>
+                        <li><a href="#void">종교</a></li>
+                        <li><a href="#void">외국어</a></li>
+                        <li><a href="#void">과학</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">로맨스</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">현대물</a></li>
+                        <li><a href="#void">역사/시대물</a></li>
+                        <li><a href="#void">판타지물</a></li>
+                        <li><a href="#void">할리퀸 소설</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">판타지</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">정통 판타지</a></li>
+                        <li><a href="#void">퓨전 판타지</a></li>
+                        <li><a href="#void">현대 판타지</a></li>
+                        <li><a href="#void">게임 판타지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">디자인문구</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">디자이너/플래너/캘린터</a></li>
+                        <li><a href="#void">노트/메모지</a></li>
+                        <li><a href="#void">카드/편지/봉투</a></li>
+                        <li><a href="#void">필기구/필통</a></li>
+                        <li><a href="#void">앨범/레코트북/컨셉북</a></li>
+                        <li><a href="#void">파일링/바인더</a></li>
+                        <li><a href="#void">데스크/오피스</a></li>
+                        <li><a href="#void">스티커</a></li>
+                        <li><a href="#void">포장용품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">라이프</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">키친</a></li>
+                        <li><a href="#void">욕실</a></li>
+                        <li><a href="#void">인테리어/데코</a></li>
+                        <li><a href="#void">여행</a></li>
+                        <li><a href="#void">개인소품</a></li>
+                        <li><a href="#void">계절상품</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="clearFix">
+        <div class="headTop">
+            <a href="#void"><i class="fas fa-bars"></i></a>
+            <div class="innerBox">
+                <h1 class="logo">
+                    <a href="index.html">북새통문고</a>
+                    <span>|</span>
+                    <a href="index.html">BOOK<span>Choice</span></a>
+                </h1>
+                <form action="#void" method="post">
+                    <input type="search" autocomplete='on' placeholder="제목, 저자, 출판사 검색" >
+                    <ul class="login">
+                        <li><a href="SignUP-before.html">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                    </ul>
+                </form>
+                <nav>
+                    <ul id="nav" class="clearFix">
+                        <li><a href="index.html"><img src="icon/Home.svg" alt="Home">홈</a></li>
+                        <li><a href="alaram.html"><img src="icon/bell.svg" alt="bell">알림</a></li>
+                        <li><a href="cart.html"><img src="icon/Cart.svg" alt="Cart">카트</a></li>
+                        <li><a href="myBookSatong.html"><img src="icon/my.svg" alt="my">마이북새통</a></li>
+                        <li><a href="location.html"><img src="icon/location.svg" alt="location">찾아오시는 길</a></li>
+                    </ul>
+                    <ul class="navIcon">
+                        <li><a href="alaram.html"><img src="icon/bell.svg" alt="bell"></a></li>
+                        <li><a href="cart.html"><img src="icon/Cart.svg" alt="Cart"></a></li>
+                        <li><a href="myBookSatong.html"><img src="icon/my.svg" alt="my"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="headBottom clearFix">
+            <div class="innerBox">
+                <ul class="headerMenu">
+                    <li>
+                        <a href="menu.html">메뉴</a>
+                        <ul class="sub">
+                            <li>
+                                <img src="icon/download.svg" alt="download">
+                                <a href="#void">다운로드</a>
+                            </li>
+                            <li>
+                                <img src="icon/Cart.svg" alt="Cart">
+                                <a href="#void">내 보관함</a>
+                            </li>
+                            <li>
+                                <img src="icon/N_blue.svg" alt="N_blue">
+                                <a href="#void">신간</a>
+                            </li>
+                            <li>
+                                <img src="icon/Best_Seller.svg" alt="Best_Seller">
+                                <a href="#void">베스트</a>
+                            </li>
+                            <li>
+                                <img src="icon/naver.svg" alt="naver">
+                                <a href="https://www.naver.com/">네이버</a>
+                            </li>
+                            <li>
+                                <img src="icon/kakao.svg" alt="kakao">
+                                <a href="https://www.kakaocorp.com/page/">카카오</a>
+                            </li>
+                            <li>
+                                <img src="icon/google.svg" alt="google">
+                                <a href="https://www.google.co.kr/">구글</a>
+                            </li>
+                            <li>
+                                <img src="icon/youtube.svg" alt="youtube">
+                                <a href="https://www.youtube.com/">유튜브</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="general.html">일반</a>
+                        <ul class="sub">
+                            <li><a href="#void">소설</a></li>
+                            <li><a href="#void">경영/경제</a></li>
+                            <li><a href="#void">인문/사회/역사</a></li>
+                            <li><a href="#void">자기계발</a></li>
+                            <li><a href="#void">에세이/시</a></li>
+                            <li><a href="#void">여행</a></li>
+                            <li><a href="#void">종교</a></li>
+                            <li><a href="#void">외국어</a></li>
+                            <li><a href="#void">과학</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="romance.html">로맨스</a>
+                        <ul class="sub">
+                            <li><a href="#void">현대물</a></li>
+                            <li><a href="#void">역사/시대물</a></li>
+                            <li><a href="#void">판타지물</a></li>
+                            <li><a href="#void">할리퀸 소설</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="fantasy.html">판타지</a>
+                        <ul class="sub">
+                            <li><a href="#void">정통 판타지</a></li>
+                            <li><a href="#void">퓨전 판타지</a></li>
+                            <li><a href="#void">현대 판타지</a></li>
+                            <li><a href="#void">게임 판타지</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="design.html">디자인문구</a>
+                        <ul class="sub">
+                            <li><a href="#void">디자이너/플래너/캘린터</a></li>
+                            <li><a href="#void">노트/메모지</a></li>
+                            <li><a href="#void">카드/편지/봉투</a></li>
+                            <li><a href="#void">필기구/필통</a></li>
+                            <li><a href="#void">앨범/레코트북/컨셉북</a></li>
+                            <li><a href="#void">파일링/바인더</a></li>
+                            <li><a href="#void">데스크/오피스</a></li>
+                            <li><a href="#void">스티커</a></li>
+                            <li><a href="#void">포장용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="life.html">라이프</a>
+                        <ul class="sub">
+                            <li><a href="#void">키친</a></li>
+                            <li><a href="#void">욕실</a></li>
+                            <li><a href="#void">인테리어/데코</a></li>
+                            <li><a href="#void">여행</a></li>
+                            <li><a href="#void">개인소품</a></li>
+                            <li><a href="#void">계절상품</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBg"></div>
+        </div>
+    </header>
+    <div id="mainBanner">
+        <div class="bannerBtn">
+            <ul class="bannerSub clearFix">
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_01.jpg" alt="banner1"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_02.jpg" alt="banner2"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_03.jpg" alt="banner3"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_04.jpg" alt="banner4"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_05.jpg" alt="banner5"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_06.jpg" alt="banner6"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_07.jpg" alt="banner7"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_08.jpg" alt="banner8"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_09.jpg" alt="banner9"></a></div></li>
+                <li><div class="imgBox"><a href="#void"><img src="img/mainBanner_10.jpg" alt="banner10"></a></div></li>
+            </ul>
+            <ul class="bannerSubBtn">
+                <li class="bannerPrevBtn"><a href="#void"><img src="icon/opacity_prev_button.svg" alt="Prev"></a></li>
+                <li class="bannerNextBtn"><a href="#void"><img src="icon/opacity_next_button.svg" alt="Next"></a></li>
+            </ul>
+            <div class="number">
+                <span class="count">1</span> <span>/10</span>
+            </div>
+        </div>
+        <div class="innerBox">
+            <ul class="bannerIcon">
+                <li>
+                    <a href="#void">
+                        <div class="Icon1">
+                            <img src="icon/NEW.svg" alt="New">
+                            <p>신간</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon2">
+                            <img src="icon/party.svg" alt="party">
+                            <p>이벤트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon5">
+                            <img src="icon/buynow.svg" alt="buynow">
+                            <p>지금 인기세트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon4">
+                            <img src="icon/rent.svg" alt="rent">
+                            <p>대여전</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon3">
+                            <img src="icon/Best_Seller.svg" alt="Best_Seller">
+                            <p>베스트셀러</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon6">
+                            <img src="icon/diary.svg" alt="diary">
+                            <p>신간 캘린더</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon7">
+                            <img src="icon/location.svg" alt="location">
+                            <p>일반 혜택지도</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon8">
+                            <img src="icon/coin.svg" alt="coin">
+                            <p>위클리 코인</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div class="Icon9">
+                            <img src="icon/book.svg" alt="book">
+                            <p>북새통 페이퍼</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<section id="container">
+    <h2 class="blind">사람들이 지금 많이 읽고 있는 책, 집 앞 서점에 방금 나온 신간!, 북새통'S PICK, NEW ARRIVAL, 북새통스토어 추천 아이템</h2>
+    <section class="readBook clearFix">
+        <h2 class="title">사람들이 지금 많이 읽고 있는 책</h2>
+        <div class="innerBox">
+            <ul class="readBook_banner">
+                <li>
+                    <a href="#void">
+                        <div><img src="img/Anne.jpg" alt="Anne"></div>
+                        <p class="readBook_text1">루시모드 몽고메리의 빨간머리 앤</p>
+                        <p class="readBook_text2">앞일을 생각하는 건 즐거운 일이라고 할 수 있어요. 이루어질 수 없을지는 몰라도, 미리 생각해 보는 건 자유거든요!</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div><img src="img/Athur.jpg" alt="Athur"></div>
+                        <p class="readBook_text1">아서 코난 도일경의 셜록</p>
+                        <p class="readBook_text2">이 세상은 아무에게도 관찰되지 않은 확실한 증거들로 가득 차 있다.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <div><img src="img/Louis.jpg" alt="Louis"></div>
+                        <p class="readBook_text1">루이스 캐럴의 이상한 나라의 앨리스</p>
+                        <p class="readBook_text2">내 기분은 내가 정해 오늘 나는 '행복'으로 할래!</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="readBook_SubBtn">
+                <li class="readBook_PrevBtn"><a href="#void"><img src="icon/opacity_prev_button.svg" alt="Prev"></a></li>
+                <li class="readBook_NextBtn"><a href="#void"><img src="icon/opacity_next_button.svg" alt="Next"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="newBook">
+        <h2 class="title">집 앞 서점에 방금 나온 신간!</h2>
+        <div class="newBook_container">
+            <div class="innerBox">
+                <div class="background circle1"></div>
+                <div class="background circle2"></div>
+                <div class="background circle3"></div>
+                <div class="background circle4"></div>
+                <div class="background circle5"></div>
+                <div class="newBook_box">
+                    <ul class="newBook_Img">
+                        <li class="new_book_menu1">
+                            <div>
+                                <div class="circle">10%</div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_01.jpg" alt="newBook01"></div>
+                                    <p class="menu_text1">대화의 희열</p>
+                                    <p class="menu_text2">KBS "대화의 희열" 제작진, 강수진 외 6명</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu2">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_02.jpg" alt="newBook02"></div>
+                                    <p class="menu_text1">영혼 통행증</p>
+                                    <p class="menu_text2">미야베 미유키</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu3">
+                            <div>
+                                <div class="Rent">대여</div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_03.jpg" alt="newBook03"></div>
+                                    <p class="menu_text1">성우가 말하는 목소리에 깃든 마법</p>
+                                    <p class="menu_text2">이용신</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu4">
+                            <div>
+                                <div class="circle">10%</div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_04.jpg" alt="newBook04"></div>
+                                    <p class="menu_text1">천 번의 죽음이 내게 알려준 것들</p>
+                                    <p class="menu_text2">김여환</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu5">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_05.jpg" alt="newBook05"></div>
+                                    <p class="menu_text1">삶이 던지는 질문은 언제나 같다</p>
+                                    <p class="menu_text2">찰스 핸디</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu6">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_06.jpg" alt="newBook06"></div>
+                                    <p class="menu_text1">호텔 해운대</p>
+                                    <p class="menu_text2">오선영</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu7">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_07.jpg" alt="newBook07"></div>
+                                    <p class="menu_text1">하루를 48시간으로 사는 마법</p>
+                                    <p class="menu_text2">이재은</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu8">
+                            <div>
+                                <div class="Rent">대여</div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_08.jpg" alt="newBook08"></div>
+                                    <p class="menu_text1">야구에도 3번의 기회가 있다는데</p>
+                                    <p class="menu_text2">니시카와 미와</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu9">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_09.jpg" alt="newBook09"></div>
+                                    <p class="menu_text1">새 마음으로</p>
+                                    <p class="menu_text2">이슬아</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu10">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_10.jpg" alt="newBook10"></div>
+                                    <p class="menu_text1">임포스터</p>
+                                    <p class="menu_text2">리사 손</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu11">
+                            <div>
+                                <div class="circle">10%</div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_11.jpg" alt="newBook11"></div>
+                                    <p class="menu_text1">개정증보판 | 이상한 정상가족</p>
+                                    <p class="menu_text2">김희경</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new_book_menu12">
+                            <div>
+                                <a href="#void">
+                                    <div class="imageBox"><img src="img/newBook_12.jpg" alt="newBook12"></div>
+                                    <p class="menu_text1">커넥트, 스탠포드 인간관계 수업</p>
+                                    <p class="menu_text2">데이비드 브래드퍼드, 캐럴</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="newBookSubBtn">
+                    <li class="newBookPrevBtn"><a href="#void"><img src="icon/opacity_prev_button.svg" alt="Prev"></a></li>
+                    <li class="newBookNextBtn"><a href="#void"><img src="icon/opacity_next_button.svg" alt="Next"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pick">
+        <h2 class="title">북새통'S PICK</h2>
+        <div class="innerBox">
+            <div class="pickImg clearFix">
+                <div class="left">
+                    <a href="#void"><img src="img/pick_01.jpg" alt="pick_01"></a>
+                    <div class="textBox1">
+                        <p class="textBox1_text0"><a href="#void">북프몰 단독 20%쿠폰<span>+GIFT</span></a></p>
+                        <p class="textBox1_text1"><a href="#void">당신을 위한 맞춤 다이어리</a></p>
+                        <p class="textBox1_text2"><a href="#void"><strong>2022년, 모든 이야기를 담다.</strong></a></p>
+                        <a href="#void"><p class="more">자세히보기</p></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right_top clearFix">
+                        <a href="#void"><img src="img/pick_02.jpg" alt="pick_02"></a>
+                        <div class="textBox2">
+                            <p class="textBox2_text1"><a href="#void">언택트 시대, 공부 자립을 위한</a></p>
+                            <p class="textBox2_text2"><a href="#void"><strong>혼공 체크리스트</strong></a></p>
+                            <a href="#void"><p class="more">자세히보기</p></a>
+                        </div>
+                    </div>
+                    <div class="right_bottom clearFix">
+                        <a href="#void"><img src="img/pick_03.jpg" alt="pick_03"></a>
+                        <div class="textBox3">
+                            <p class="textBox3_text1"><a href="#void">올해도 잘 견딘 나에게</a></p>
+                            <p class="textBox3_text2"><a href="#void"><strong>수고했어, 나 자신!</strong></a></p>
+                            <a href="#void"><p class="more">선물 보러가기</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new_arrival clearFix">
+        <h2 class="title">NEW ARRIVAL</h2>
+        <div class="new_arrival_innerBox">
+            <div class="innerBox">
+                <div class="new_arrival_box">
+                    <ul class="new_arrival_Img">
+                        <li>
+                            <a href="#void"><img src="img/new_01.jpg" alt="new1"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">리딩펫 스마트 스탠드 - 북찌</p>
+                                    <p class="new_arrival_text2">7,800원</p>
+                                    <p class="new_arrival_text3">6,240원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_02.jpg" alt="new2"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">리딩펫 스마트 스탠드 - 위티</p>
+                                    <p class="new_arrival_text2">7,800원</p>
+                                    <p class="new_arrival_text3">6,240원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_03.jpg" alt="new3"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 스마트 스탠드 - 빨간머리 앤</p>
+                                    <p class="new_arrival_text2">7,800원</p>
+                                    <p class="new_arrival_text3">6,240원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_04.jpg" alt="new4"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 스마트 스탠드 - 이상한 나라의 앨리스</p>
+                                    <p class="new_arrival_text2">7,800원</p>
+                                    <p class="new_arrival_text3">6,240원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_05.jpg" alt="new5"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">한국문학 스마트 스탠드 - 광야</p>
+                                    <p class="new_arrival_text2">7,800원</p>
+                                    <p class="new_arrival_text3">6,240원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_06.jpg" alt="new6"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">한국문학 스마트 스탠드 - 산유화</p>
+                                    <p class="new_arrival_text2">7,800원</p>
+                                    <p class="new_arrival_text3">6,240원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_07.jpg" alt="new7"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 드로잉 사각 거울 - 빨간머리 앤</p>
+                                    <p class="new_arrival_text2">4,500원</p>
+                                    <p class="new_arrival_text3">4,270원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_08.jpg" alt="new8"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 스터디 마스터 노트</p>
+                                    <p class="new_arrival_text2">3,300원</p>
+                                    <p class="new_arrival_text3">2,970원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_09.jpg" alt="new9"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 리무버 스티커</p>
+                                    <p class="new_arrival_text2">1,800원</p>
+                                    <p class="new_arrival_text3">1,440원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_10.jpg" alt="new10"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">콤팩트 북램프 - 세계문학 빨간머리 앤</p>
+                                    <p class="new_arrival_text2">19,800원</p>
+                                    <p class="new_arrival_text3">15,840원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_11.jpg" alt="new11"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">콤팩트 북램프 - 한국문학 별 헤는 밤</p>
+                                    <p class="new_arrival_text2">19,800원</p>
+                                    <p class="new_arrival_text3">15,840원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_12.jpg" alt="new12"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 한국문학 스터디 마스터 노트 12권 세트</p>
+                                    <p class="new_arrival_text2">36,000원</p>
+                                    <p class="new_arrival_text3">28,800원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_13.jpg" alt="new13"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 리무버 스티커 마이 홈</p>
+                                    <p class="new_arrival_text2">1,800원</p>
+                                    <p class="new_arrival_text3">1,440원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_14.jpg" alt="new14"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">더블 포인트 인덱스 스티키 리딩펫 - 리딩독</p>
+                                    <p class="new_arrival_text2">2,900원</p>
+                                    <p class="new_arrival_text3">2,320원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_15.jpg" alt="new15"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 스터디 노트 6종 세트</p>
+                                    <p class="new_arrival_text2">15,600원</p>
+                                    <p class="new_arrival_text3">13,260원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_16.jpg" alt="new16"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 스터디 노트 10권 세트</p>
+                                    <p class="new_arrival_text2">26,000원</p>
+                                    <p class="new_arrival_text3">20,800원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_17.jpg" alt="new17"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">북마크 노트 레코딩 스티커 - 컬러풀</p>
+                                    <p class="new_arrival_text2">2,500원</p>
+                                    <p class="new_arrival_text3">2,250원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_18.jpg" alt="new18"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">한국문학 성냥 - 산유화</p>
+                                    <p class="new_arrival_text2">1,700원</p>
+                                    <p class="new_arrival_text3">1,530원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_19.jpg" alt="new19"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">딜라이트 빈티지 독서 키트 - 오렌지</p>
+                                    <p class="new_arrival_text2">32,000원</p>
+                                    <p class="new_arrival_text3">25,600원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_20.jpg" alt="new20"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">딜라이트 빈티지 독서 키트 - 카라멜</p>
+                                    <p class="new_arrival_text2">32,000원</p>
+                                    <p class="new_arrival_text3">25,600원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_21.jpg" alt="new21"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">스냅샷 북마크 - 북프레임</p>
+                                    <p class="new_arrival_text2">2,000원</p>
+                                    <p class="new_arrival_text3">1,800원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_22.jpg" alt="new22"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">스냅샷 북마크 - 원형프레임</p>
+                                    <p class="new_arrival_text2">2,000원</p>
+                                    <p class="new_arrival_text3">1,800원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_23.jpg" alt="new23"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">세계문학 오픈북 마우스패드 - 이상한 나라의 앨리스</p>
+                                    <p class="new_arrival_text2">3,800원</p>
+                                    <p class="new_arrival_text3">3,040원</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="img/new_24.jpg" alt="new24"></a>
+                            <div>
+                                <a href="#void">
+                                    <p class="new_arrival_text1">리딩펫 포스트그립 그립톡</p>
+                                    <p class="new_arrival_text2">8,500원</p>
+                                    <p class="new_arrival_text3">6,800원</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="new_arrival_SubBtn">
+                    <li class="new_arrival_PrevBtn"><a href="#void"><img src="icon/opacity_prev_button.svg" alt="Prev"></a></li>
+                    <li class="new_arrival_NextBtn"><a href="#void"><img src="icon/opacity_next_button.svg" alt="Next"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="item clearFix">
+        <h2 class="title">북새통스토어 추천 아이템</h2>
+        <div class="innerBox">
+            <div class="Item_box">
+                <ul class="itemImg clearFix">
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_01.jpg" alt="Choice1"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">세계문학 북마크 볼펜 2 - 비밀의 화원</p>
+                                <p class="itemImg_text2">2,400원</p>
+                                <p class="itemImg_text3">2,160원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_02.jpg" alt="Choice2"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">뉴 독서대 문구세트 - 옐로우</p>
+                                <p class="itemImg_text2">28,500원</p>
+                                <p class="itemImg_text3">21,370원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_03.jpg" alt="Choice3"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">20공 독서 다이어리 - 옐로우</p>
+                                <p class="itemImg_text2">15,800원</p>
+                                <p class="itemImg_text3">12,640원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_04.jpg" alt="Choice4"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">한국문학 A4 스탠드업 클립보드 - 꽃</p>
+                                <p class="itemImg_text2">12,800원</p>
+                                <p class="itemImg_text3">11,520원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_05.jpg" alt="Choice5"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">리딩펫 지퍼파일 백 - 가로형 북찌</p>
+                                <p class="itemImg_text2">7,800원</p>
+                                <p class="itemImg_text3">7,020원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_06.jpg" alt="Choice6"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">세계문학 테이블매트 - 이상한 나라의 앨리스</p>
+                                <p class="itemImg_text2">3,400원</p>
+                                <p class="itemImg_text3">2,380원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_07.jpg" alt="Choice7"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">세계문학 뱃지 - 빨간머리 앤 (오픈북)</p>
+                                <p class="itemImg_text2">6,400원</p>
+                                <p class="itemImg_text3">6,400원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_08.jpg" alt="Choice8"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">리딩펫 미니 수첩 - 북찌</p>
+                                <p class="itemImg_text2">2,000원</p>
+                                <p class="itemImg_text3">1,800원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_09.jpg" alt="Choice9"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">리딩펫 16cm 자 - 솜이와 조이</p>
+                                <p class="itemImg_text2">900원</p>
+                                <p class="itemImg_text3">810원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <div><img src="img/Choice_10.jpg" alt="Choice10"></div>
+                            <div class="itemImg_text">
+                                <p class="itemImg_text1">리딩펫 스마트 스탠드 - 북찌</p>
+                                <p class="itemImg_text2">7,800원</p>
+                                <p class="itemImg_text3">6,240원</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="item_SubBtn">
+                <li class="item_PrevBtn"><a href="#void"><img src="icon/opacity_prev_button.svg" alt="Prev"></a></li>
+                <li class="item_NextBtn"><a href="#void"><img src="icon/opacity_next_button.svg" alt="Next"></a></li>
+            </ul>
+        </div>
+    </section>
+</section>
+<footer class="clearFix">
+    <div class="innerBox">
+        <div class="footTop clearFix">
+            <ul class="footMenu">
+                <li><a href="#void">고객센터</a></li>
+                <li><a href="#void">공지사항</a></li>
+            </ul>
+            <ul class="footFamily">
+                <li><a href="#void">북새통PAPER</a></li>
+                <li><a href="#void">제휴카트</a></li>
+                <li><a href="#void">뷰어 다운로드</a></li>
+                <li><a href="#void">북새통캐시 충전</a></li>
+            </ul>
+            <ul class="content">
+                <li><a href="#void">콘텐츠 제공문의</a></li>
+                <li><a href="#void">CP 사이트</a></li>
+                <li><a href="#void">사업 제휴 문의</a></li>
+                <li><a href="#void">북새통셀렉트 B2B</a></li>
+            </ul>
+            <ul class="sns">
+                <li>
+                    <a href="https://www.facebook.com/">페이스북</a>
+                    <img src="icon/facebook.svg" alt="facebook">
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=ko">인스타그램</a>
+                    <img src="icon/instagram.svg" alt="instagram">
+                </li>
+            </ul>
+            <ul class="introduce">
+                <li>
+                    <a href="#void">회사소개</a>
+                </li>
+                <li>
+                    <a href="#void">인재 채용</a>
+                    <img src="icon/N_blue.svg" alt="N_blue">
+                </li>
+            </ul>
+            <div class="familySite">
+                <a href="#void">패밀리 사이트</a>
+                <ul class="family">
+                    <li class="familysub"><a href="#void">북새통 상상캠퍼스</a></li>
+                    <li class="familysub"><a href="#void">e상상캠퍼스</a></li>
+                    <li class="familysub"><a href="#void">북새통 커뮤니티</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footBottom clearFix">
+            <p class="footLogo"><a href="#void">북새통(주) 사업자 정보</a></p>
+            <p class="footBottom_text1">대표자 | 이동호 사업자 등록번호 | 120-87-27435통신판매업 신고번호 | 제 2009-서울강남 35-02139호</p>
+            <p class="footBottom_text2">이메일 | dong9639@gmail.com 대표전화 | 1644-0331주소 | 서울시 강남구 역삼동 702-28 어반벤치빌딩 10층</p>
+            <p class="footBottom_text3"><a href="#void">&copy;BOOKCorp.</a></p>
+            <ul class="footMenu2">
+                <li><a href="#void">이용약관</a></li>
+                <li><a href="#void">개인 정보 처리방침</a></li>
+                <li><a href="#void">청소년 보호 정책</a></li>
+                <li><a href="#void">사업자 정보 확인</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

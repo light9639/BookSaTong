@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="shortcut icon" href="icon/BookSaTong.svg">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $(".text").focusin(function () {
+                $(this).addClass("active")
+            })
+            $(".text").focusout(function () {
+                $(this).removeClass("active");
+            })
+
+            // 메뉴 마우스 호버
+            $(".headBottom").mouseover(function () {
+                $(".sub").stop().slideDown(500);
+                $(".subBg").stop().slideDown(500);
+            })
+            $(".headBottom").mouseout(function () {
+                $(".sub").stop().slideUp(500);
+                $(".subBg").stop().slideUp(500);
+            });
+
+            // 메뉴 클릭시 색깔 변화
+            $(".headerMenu>li").mouseover(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+            $(".headerMenu>li").mouseout(function () {
+                $(this).removeClass("active");
+            })
+            $(".sub>li").mouseover(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+            $(".sub>li").mouseout(function () {
+                $(this).removeClass("active");
+            })
+        })
+    </script>
+</head>
+<body>
+    <ul class="skipMenu">
+        <li><a href="#nav">메인메뉴 바로가기</a></li>
+    </ul>
+    <header class="clearFix">
+        <div class="headTop">
+            <a href="#void"><i class="fas fa-bars"></i></a>
+            <div class="innerBox">
+                <h1 class="logo">
+                    <a href="index.html">북새통문고</a>
+                    <span>|</span>
+                    <a href="index.html">BOOK<span>Choice</span></a>
+                </h1>
+                <form action="#">
+                    <input class="text" type="search" autocomplete='on' placeholder="제목, 저자, 출판사 검색" >
+                    <ul class="login">
+                        <li><a href="SignUP-before.html">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                    </ul>
+                </form>
+                <nav>
+                    <ul id="nav" class="clearFix">
+                        <li><a href="index.html"><img src="icon/Home.svg" alt="Home">홈</a></li>
+                        <li><a href="alaram.html"><img src="icon/bell.svg" alt="bell">알림</a></li>
+                        <li><a href="cart.html"><img src="icon/Cart.svg" alt="Cart">카트</a></li>
+                        <li><a href="myBookSatong.html"><img src="icon/my.svg" alt="my">마이북새통</a></li>
+                        <li><a href="location.html"><img src="icon/location.svg" alt="location">찾아오시는 길</a></li>
+                    </ul>
+                    <ul class="navIcon">
+                        <li><a href="alaram.html"><img src="icon/bell.svg" alt="bell"></a></li>
+                        <li><a href="cart.html"><img src="icon/Cart.svg" alt="Cart"></a></li>
+                        <li><a href="myBookSatong.html"><img src="icon/my.svg" alt="my"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="headBottom clearFix">
+            <div class="innerBox">
+                <ul class="headerMenu">
+                    <li>
+                        <a href="menu.html">메뉴</a>
+                        <ul class="sub">
+                            <li>
+                                <img src="icon/download.svg" alt="download">
+                                <a href="#void">다운로드</a>
+                            </li>
+                            <li>
+                                <img src="icon/Cart.svg" alt="Cart">
+                                <a href="#void">내 보관함</a>
+                            </li>
+                            <li>
+                                <img src="icon/N_blue.svg" alt="N_blue">
+                                <a href="#void">신간</a>
+                            </li>
+                            <li>
+                                <img src="icon/Best_Seller.svg" alt="Best_Seller">
+                                <a href="#void">베스트</a>
+                            </li>
+                            <li>
+                                <img src="icon/naver.svg" alt="naver">
+                                <a href="https://www.naver.com/">네이버</a>
+                            </li>
+                            <li>
+                                <img src="icon/kakao.svg" alt="kakao">
+                                <a href="https://www.kakaocorp.com/page/">카카오</a>
+                            </li>
+                            <li>
+                                <img src="icon/google.svg" alt="google">
+                                <a href="https://www.google.co.kr/">구글</a>
+                            </li>
+                            <li>
+                                <img src="icon/youtube.svg" alt="youtube">
+                                <a href="https://www.youtube.com/">유튜브</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="general.html">일반</a>
+                        <ul class="sub">
+                            <li><a href="#void">소설</a></li>
+                            <li><a href="#void">경영/경제</a></li>
+                            <li><a href="#void">인문/사회/역사</a></li>
+                            <li><a href="#void">자기계발</a></li>
+                            <li><a href="#void">에세이/시</a></li>
+                            <li><a href="#void">여행</a></li>
+                            <li><a href="#void">종교</a></li>
+                            <li><a href="#void">외국어</a></li>
+                            <li><a href="#void">과학</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="romance.html">로맨스</a>
+                        <ul class="sub">
+                            <li><a href="#void">현대물</a></li>
+                            <li><a href="#void">역사/시대물</a></li>
+                            <li><a href="#void">판타지물</a></li>
+                            <li><a href="#void">할리퀸 소설</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="fantasy.html">판타지</a>
+                        <ul class="sub">
+                            <li><a href="#void">정통 판타지</a></li>
+                            <li><a href="#void">퓨전 판타지</a></li>
+                            <li><a href="#void">현대 판타지</a></li>
+                            <li><a href="#void">게임 판타지</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="design.html">디자인문구</a>
+                        <ul class="sub">
+                            <li><a href="#void">디자이너/플래너/캘린터</a></li>
+                            <li><a href="#void">노트/메모지</a></li>
+                            <li><a href="#void">카드/편지/봉투</a></li>
+                            <li><a href="#void">필기구/필통</a></li>
+                            <li><a href="#void">앨범/레코트북/컨셉북</a></li>
+                            <li><a href="#void">파일링/바인더</a></li>
+                            <li><a href="#void">데스크/오피스</a></li>
+                            <li><a href="#void">스티커</a></li>
+                            <li><a href="#void">포장용품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="life.html">라이프</a>
+                        <ul class="sub">
+                            <li><a href="#void">키친</a></li>
+                            <li><a href="#void">욕실</a></li>
+                            <li><a href="#void">인테리어/데코</a></li>
+                            <li><a href="#void">여행</a></li>
+                            <li><a href="#void">개인소품</a></li>
+                            <li><a href="#void">계절상품</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBg"></div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobilemenu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/link.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            //모바일 메뉴 클릭시 움직임
+            $('.mobileMenu>li>a').click(function () {
+                $(this).toggleClass("active")
+                    .parent()
+                    .siblings()
+                    .children("a").removeClass("active");
+
+                $(this).next().slideToggle(300)
+                    .parent()
+                    .siblings()
+                    .children(".mobileSub").slideUp(300);
+            })
+
+            // x버튼 클릭시 모바일 메뉴 오른쪽으로 이동
+            $('.Mobile>.mobileBox>a').click(function () {
+                $(".Mobile").removeClass("mobileActive");
+            })
+
+            // x버튼 클릭시 모바일 메뉴 오른쪽으로 이동
+            $('.headTop>a>i').click(function () {
+                $(".Mobile").addClass("mobileActive");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="Mobile">
+        <div class="mobileBox">
+            <h2 class="mobileLogo">
+                <a href="index.html">북새통문고</a>
+                <span>|</span>
+                <a href="index.html">BOOK<span>Choice</span></a>
+            </h2>
+            <ul class="login">
+                <li><a href="SignUP-before.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+            <input class="text" type="search" placeholder="제목, 저자, 출판사 검색">
+            <a href="#void"><img src="img/calpop_close2n.png" alt="X"></a>
+        </div>
+        <nav id="mobileNav">
+            <ul class="mobileMenu">
+                <li>
+                    <a href="#void">메뉴</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void"><img src="icon/download.svg" alt="download">다운로드</a></li>
+                        <li><a href="#void"><img src="icon/Cart.svg" alt="Cart">내 보관함</a></li>
+                        <li><a href="#void"><img src="icon/N_blue.svg" alt="N_blue">신간</a></li>
+                        <li><a href="#void"><img src="icon/Best_Seller.svg" alt="Best_Seller">베스트</a></li>
+                        <li><a href="https://www.naver.com/"><img src="icon/naver.svg" alt="naver">네이버</a></li>
+                        <li><a href="https://www.kakaocorp.com/page/"><img src="icon/kakao.svg" alt="kakao">카카오</a></li>
+                        <li><a href="https://www.google.co.kr/"><img src="icon/google.svg" alt="google">구글</a></li>
+                        <li><a href="https://www.youtube.com/"><img src="icon/youtube.svg" alt="youtube">유튜브</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">일반</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">소설</a></li>
+                        <li><a href="#void">경영/경제</a></li>
+                        <li><a href="#void">인문/사회/역사</a></li>
+                        <li><a href="#void">자기계발</a></li>
+                        <li><a href="#void">에세이/시</a></li>
+                        <li><a href="#void">여행</a></li>
+                        <li><a href="#void">종교</a></li>
+                        <li><a href="#void">외국어</a></li>
+                        <li><a href="#void">과학</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">로맨스</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">현대물</a></li>
+                        <li><a href="#void">역사/시대물</a></li>
+                        <li><a href="#void">판타지물</a></li>
+                        <li><a href="#void">할리퀸 소설</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">판타지</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">정통 판타지</a></li>
+                        <li><a href="#void">퓨전 판타지</a></li>
+                        <li><a href="#void">현대 판타지</a></li>
+                        <li><a href="#void">게임 판타지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">디자인문구</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">디자이너/플래너/캘린터</a></li>
+                        <li><a href="#void">노트/메모지</a></li>
+                        <li><a href="#void">카드/편지/봉투</a></li>
+                        <li><a href="#void">필기구/필통</a></li>
+                        <li><a href="#void">앨범/레코트북/컨셉북</a></li>
+                        <li><a href="#void">파일링/바인더</a></li>
+                        <li><a href="#void">데스크/오피스</a></li>
+                        <li><a href="#void">스티커</a></li>
+                        <li><a href="#void">포장용품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void">라이프</a>
+                    <ul class="mobileSub">
+                        <li><a href="#void">키친</a></li>
+                        <li><a href="#void">욕실</a></li>
+                        <li><a href="#void">인테리어/데코</a></li>
+                        <li><a href="#void">여행</a></li>
+                        <li><a href="#void">개인소품</a></li>
+                        <li><a href="#void">계절상품</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

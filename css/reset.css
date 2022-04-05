@@ -1,0 +1,44 @@
+h1,h2,h3,h4,h5,p,ol,li,dl,dt,dd,p,* {margin:0; padding: 0;}
+li {list-style: none;}
+a {
+    color:#333;
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+    border: 0;
+}
+address,i,em {
+    font-style: normal;
+}
+.blind {
+    position: absolute;
+    top: -9999px;
+}
+hr{
+    display: none;
+}
+body {
+    font-family: 'Noto Sans KR', "돋움", dotum ,sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1;
+}
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.skipMenu a{
+    display: block;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    width: 100%;
+    top: -999px;
+}
+.skipMenu a:focus {
+    top:0;
+}

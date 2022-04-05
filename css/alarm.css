@@ -1,0 +1,68 @@
+#container>.innerBox {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#container>.innerBox>h2 {
+    padding: 25px 0;
+}
+.alarm_box {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+    background-image: url(../img/arrow_right_on.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.alarm_box:hover {
+    background-color: rgb(251, 251, 251);
+}
+.alarm_box>a {
+    display: flex;
+}
+.alarm_box>a>.alarm_img {
+    width: 80px;
+    padding-right: 25px;
+    margin: auto 0;
+}
+.alarm_box>a>.alarm_img>img {
+    width: 100%;
+}
+.alarm_textBox {
+    width: 100%;
+    margin: auto 0;
+}
+.alarm_textBox>p {
+    width: 95%;
+    line-height: 30px;
+}
+.alarm_text1 {
+    font-weight: 400;
+    font-size: 1.25em;
+}
+.alarm_text2 {
+    color: #3366cc;
+    font-weight: 500;
+}
+.alarm_text1, .alarm_text2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+#container span {
+    color: #3366cc;
+    font-weight: 500;
+}
+.alarm_text3 {
+    color: rgb(128, 137, 145);
+    font-size: .9em;
+}
+footer {
+    margin-top: 50px;
+}
+@media screen and (max-width:767px) {
+    #container>.innerBox {
+        width: 98%;
+    }
+}

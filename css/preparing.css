@@ -1,0 +1,26 @@
+#container {
+    margin: 50px 0;
+}
+.bannerBox {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.bannerBox img {
+    width: 100%;
+    opacity: .5;
+}
+.contents {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.contents_box {
+    max-width: 100%
+}
+.text1 {
+    padding-bottom: 20px;
+}

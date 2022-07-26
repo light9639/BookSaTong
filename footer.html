@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="shortcut icon" href="icon/BookSaTong.svg">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            // .footmenu clearFix 추가 제거
+            function clearFix() {
+                wWidth = $(window).outerWidth();
+                if (wWidth > 767) {
+                    $(".footMenu").removeClass("clearFix").siblings().addClass("clearFix");
+                }
+                else {
+                    $(".footMenu").addClass("clearFix").siblings().removeClass("clearFix");
+                }
+            }
+
+            $(window).on("resize", function () {
+                clearFix();
+            })
+
+            $('.familySite>a').click(function () {
+                $(this).toggleClass("familyActive")
+                    .parent()
+                    .siblings()
+                    .children("a").removeClass("familyActive");
+                $(this).next().slideToggle(300)
+                    .parent()
+                    .siblings()
+                    .children(".family").slideUp(300);
+            })
+        })
+    </script>
+</head>
+<body>
+    <footer class="clearFix">
+        <div class="innerBox">
+            <div class="footTop clearFix">
+                <ul class="footMenu">
+                    <li><a href="#void">고객센터</a></li>
+                    <li><a href="#void">공지사항</a></li>
+                </ul>
+                <ul class="footFamily">
+                    <li><a href="#void">북새통PAPER</a></li>
+                    <li><a href="#void">제휴카트</a></li>
+                    <li><a href="#void">뷰어 다운로드</a></li>
+                    <li><a href="#void">북새통캐시 충전</a></li>
+                </ul>
+                <ul class="content">
+                    <li><a href="#void">콘텐츠 제공문의</a></li>
+                    <li><a href="#void">CP 사이트</a></li>
+                    <li><a href="#void">사업 제휴 문의</a></li>
+                    <li><a href="#void">북새통셀렉트 B2B</a></li>
+                </ul>
+                <ul class="sns">
+                    <li>
+                        <a href="https://www.facebook.com/">페이스북</a>
+                        <img src="icon/facebook.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/?hl=ko">인스타그램</a>
+                        <img src="icon/instagram.svg" alt="instagram">
+                    </li>
+                </ul>
+                <ul class="introduce">
+                    <li>
+                        <a href="#void">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#void">인재 채용</a>
+                        <img src="icon/N_blue.svg" alt="N_blue">
+                    </li>
+                </ul>
+                <div class="familySite">
+                    <a href="#void">패밀리 사이트</a>
+                    <ul class="family">
+                        <li class="familysub"><a href="#void">북새통 상상캠퍼스</a></li>
+                        <li class="familysub"><a href="#void">e상상캠퍼스</a></li>
+                        <li class="familysub"><a href="#void">북새통 커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footBottom clearFix">
+                <p class="footLogo"><a href="#void">북새통(주) 사업자 정보</a></p>
+                <p class="footBottom_text1">대표자 | 이동호 사업자 등록번호 | 120-87-27435통신판매업 신고번호 | 제 2009-서울강남 35-02139호</p>
+                <p class="footBottom_text2">이메일 | dong9639@gmail.com 대표전화 | 1644-0331주소 | 서울시 강남구 역삼동 702-28 어반벤치빌딩 10층</p>
+                <p class="footBottom_text3"><a href="#void">&copy;BOOKCorp.</a></p>
+                <ul class="footMenu2">
+                    <li><a href="#void">이용약관</a></li>
+                    <li><a href="#void">개인 정보 처리방침</a></li>
+                    <li><a href="#void">청소년 보호 정책</a></li>
+                    <li><a href="#void">사업자 정보 확인</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

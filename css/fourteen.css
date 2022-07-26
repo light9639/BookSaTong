@@ -1,0 +1,79 @@
+/* container  */
+#container>h1 {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 50px;
+}
+#container>.innerBox {
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+.bannerBox {
+    width: 250px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.bannerBox>img {
+    width: 100%;
+}
+.check {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.check>input {
+    padding: 5px;
+}
+.check>label {
+    font-weight: 500;
+}
+.phoneButton, .signUpButton {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+.phoneButton {
+    background-color: var(--mainColor);
+}
+.phoneButton>a {
+    color: #fff;
+    background-color: var(--mainColor);
+    border: none;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.signUpButton {
+    background-color: var(--textSub);
+    margin-top: 25px;
+}
+.signUpButton>a {
+    color: #fff;
+}
+.signUpButton>a {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.phoneButton:hover, .signUpButton:hover {
+    opacity: .8;
+}
+footer {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .box1, .box2, .checkBox {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #container {
+        overflow: hidden;
+    }
+    .bannerBox {
+        width: 220px;
+    }
+}

@@ -448,14 +448,25 @@ nav {
 .title > a {
     transition: .5s;
 }
-.title > a > img {
-    width: 10px;
-    margin-left: 5px;
-    margin-top: 8px;
-    transition: .5s;
+.title > a:hover {
+    color: var(--textColor);
 }
-.title > a:hover > img {
-    margin-left: 20px;
+.title > a > span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/arrow_right_on.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(50%, -35%);
+    transition: 0.5s;
+}
+.title > a:hover > span{
+    background-image: url(../img/arrow_right_on.png);
+    left: 110%;
 }
 
 /* readBook */

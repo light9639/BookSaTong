@@ -1,41 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>찾아오시는 길</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="shortcut icon" href="icon/BookSaTong.svg">
     <link rel="stylesheet" href="css/link.css">
     <link rel="stylesheet" href="css/location.css">
     <style>
-        .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
-        .wrap * {padding: 0;margin: 0;}
-        .wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
-        .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
-        .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
-        .info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
-        .info .close:hover {cursor: pointer;}
-        .info .body {position: relative;overflow: hidden;}
-        .info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
-        .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-        .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
-        .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
-        .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
-        .info .link {color: #5085BB;}
+        .wrap {
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            width: 288px;
+            height: 132px;
+            margin-left: -144px;
+            text-align: left;
+            overflow: hidden;
+            font-size: 12px;
+            font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+            line-height: 1.5;
+        }
+
+        .wrap * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap .info {
+            width: 286px;
+            height: 120px;
+            border-radius: 5px;
+            border-bottom: 2px solid #ccc;
+            border-right: 1px solid #ccc;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .wrap .info:nth-child(1) {
+            border: 0;
+            box-shadow: 0px 1px 2px #888;
+        }
+
+        .info .title {
+            padding: 5px 0 0 10px;
+            height: 30px;
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .info .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #888;
+            width: 17px;
+            height: 17px;
+            background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+        }
+
+        .info .close:hover {
+            cursor: pointer;
+        }
+
+        .info .body {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info .desc {
+            position: relative;
+            margin: 13px 0 0 90px;
+            height: 75px;
+        }
+
+        .desc .ellipsis {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .desc .jibun {
+            font-size: 11px;
+            color: #888;
+            margin-top: -2px;
+        }
+
+        .info .img {
+            position: absolute;
+            top: 6px;
+            left: 5px;
+            width: 73px;
+            height: 71px;
+            border: 1px solid #ddd;
+            color: #888;
+            overflow: hidden;
+        }
+
+        .info:after {
+            content: '';
+            position: absolute;
+            margin-left: -12px;
+            left: 50%;
+            bottom: 0;
+            width: 22px;
+            height: 12px;
+            background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+        }
+
+        .info .link {
+            color: #5085BB;
+        }
     </style>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/loading.js"></script>
 </head>
+
 <body>
     <ul class="skipMenu">
         <li><a href="#nav">메인메뉴 바로가기</a></li>
         <li><a href="#container">본문 바로가기</a></li>
     </ul>
     <div id="Mobile"></div>
-    <header id="header" class="clearFix"></header>
+    <header id="header"></header>
     <section id="container">
         <h1>찾아오는 길</h1>
         <div class="innerBox">
@@ -68,35 +162,40 @@
             <div class="eventBox_book_one">
                 <div class="eventBox_book_oneBox1">
                     <img src="locationImg/eventBox_book_one_1.jpg" alt="eventBox_book_one_1">
-                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_1.png" alt="eventBox_book_one_text1">
+                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_1.png"
+                        alt="eventBox_book_one_text1">
                 </div>
                 <div class="eventBox_book_oneBox2">
                     <img src="locationImg/eventBox_book_one_2.jpg" alt="eventBox_book_one_2">
-                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_2.png" alt="eventBox_book_one_text2">
+                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_2.png"
+                        alt="eventBox_book_one_text2">
                 </div>
                 <div class="eventBox_book_oneBox3">
                     <img src="locationImg/eventBox_book_one_3.jpg" alt="eventBox_book_one_3">
-                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_3.png" alt="eventBox_book_one_text3">
+                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_3.png"
+                        alt="eventBox_book_one_text3">
                 </div>
                 <div class="eventBox_book_oneBox4">
                     <img src="locationImg/eventBox_book_one_4.jpg" alt="eventBox_book_one_4">
-                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_4.png" alt="eventBox_book_one_text4">
+                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_4.png"
+                        alt="eventBox_book_one_text4">
                 </div>
                 <div class="eventBox_book_oneBox5">
                     <img src="locationImg/eventBox_book_one_5.jpg" alt="eventBox_book_one_5">
-                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_5.png" alt="eventBox_book_one_text5">
+                    <img class="eventBox_book_oneBox1_title" src="locationImg/eventBox_book_one_5.png"
+                        alt="eventBox_book_one_text5">
                 </div>
             </div>
         </div>
     </section>
-    <footer id="footer" class="clearFix"></footer>
+    <footer id="footer"></footer>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e7a49d21161d4d937044f81549130320"></script>
     <script>
         var mapContainer = document.getElementById('map'),
-        mapOption = {
-            center: new kakao.maps.LatLng(37.55780674631167, 126.92640670830215),
-            level: 3
-        };
+            mapOption = {
+                center: new kakao.maps.LatLng(37.55780674631167, 126.92640670830215),
+                level: 3
+            };
 
         var map = new kakao.maps.Map(mapContainer, mapOption);
 
@@ -108,11 +207,11 @@
         map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
         var imageSrc = 'icon/location.svg',
-        imageSize = new kakao.maps.Size(38, 60),
-        imageOption = {offset: new kakao.maps.Point(19, 60)};
+            imageSize = new kakao.maps.Size(38, 60),
+            imageOption = { offset: new kakao.maps.Point(19, 60) };
 
         var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-        markerPosition = new kakao.maps.LatLng(37.55780674631167, 126.92640670830215);
+            markerPosition = new kakao.maps.LatLng(37.55780674631167, 126.92640670830215);
 
         var marker = new kakao.maps.Marker({
             position: markerPosition,
@@ -147,7 +246,7 @@
         });
 
         // 마커를 클릭했을 때 커스텀 오버레이를 표시합니다
-        kakao.maps.event.addListener(marker, 'click', function() {
+        kakao.maps.event.addListener(marker, 'click', function () {
             overlay.setMap(map);
         });
 
@@ -159,4 +258,5 @@
         marker.setMap(map);
     </script>
 </body>
+
 </html>

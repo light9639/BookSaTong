@@ -18,7 +18,7 @@ $(function() {
     })
 
     //체크박스 누르면 전체클릭
-    $(document).ready( function() {
+    $(document).ready(function() {
         $('.check-all').click( function() {
             $('.ab').prop('checked', this.checked );
         });
